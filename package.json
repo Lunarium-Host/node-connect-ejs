@@ -1,6 +1,6 @@
 {
   "name": "connect-ejs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "EJS for connect",
   "main": "index.js",
   "scripts": {

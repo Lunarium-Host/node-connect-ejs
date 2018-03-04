@@ -16,7 +16,7 @@ module.exports = function(documentRoot, tplParams, opts ){
 		process.exit();
 	}
 	if(! fs.existsSync(documentRoot) ){ 
-		console.error("!!! ERROR: Document root doen't exists", documentRoot)
+		console.error("!!! ERROR: Document root doesn't exists", documentRoot)
 		console.error("Usage: require('connect-ejs')(documentRoot, tplParams, opts )");
 		process.exit();
 	}
@@ -26,8 +26,8 @@ module.exports = function(documentRoot, tplParams, opts ){
 		// log("Current Path", webPath, path.extname(webPath) );
 		if( webPath.slice(-1) == '/' ){ webPath += curOpts.indexPage; }
 		if( path.dirname(webPath) === '/tpl'){ return next(); }
-		if( path.extname(webPath) == '' && fs.existsSync(documentRoot+webPath+'.' + curOpts.ext ) ){ webPath += '.' + curOpts; }
-		if( path.extname(webPath) === '.' + curOpts  ){
+		if( path.extname(webPath) == '' && fs.existsSync(documentRoot+webPath+'.' + curOpts.ext ) ){ webPath += '.' + curOpts.ext; }
+		if( path.extname(webPath) === '.' + curOpts.ext  ){
 			var filePath = documentRoot+webPath;
 			// log("Path: ", filePath, fs.existsSync(filePath));
 			if( fs.existsSync(filePath) ){

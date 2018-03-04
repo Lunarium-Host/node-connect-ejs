@@ -1,0 +1,24 @@
+{
+  "name": "connect-ejs",
+  "version": "0.0.1",
+  "description": "EJS for connect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Petr Gorvitovskiy",
+    "email": "info@lundera.ru",
+    "url": "info@lundera.ru"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lunarium-Host/node-connect-ejs.git"
+  }
+}

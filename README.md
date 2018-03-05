@@ -59,7 +59,7 @@ Out will be:
 Is folder which all your ejs files exists
 
 ### tplParams
-All variables that passing to your ejs file. It can be function ( params are same as in middleware `req,res,next )` 
+All variables that passing to your ejs file. It can be function ( params are same as in middleware `req,res,next` ) 
 
 ### opts 
 options of middleware:

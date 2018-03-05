@@ -1,6 +1,6 @@
 {
   "name": "connect-ejs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "EJS for connect",
   "main": "index.js",
   "keywords": "connect, connect-ejs, middleware, ejs",

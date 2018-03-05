@@ -1,9 +1,9 @@
 {
   "name": "connect-ejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "EJS for connect",
   "main": "index.js",
-  "keywords" : "connect, connect-ejs, middleware, ejs",
+  "keywords": "connect, connect-ejs, middleware, ejs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

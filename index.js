@@ -22,6 +22,7 @@ module.exports = function(documentRoot, tplParams, opts ){
 	}
 
 	return function(req, res, next){
+		if( 'stopped' in res ){ return; }
 		var webPath = req._parsedUrl.pathname;
 		// log("Current Path", webPath, path.extname(webPath) );
 		if( webPath.slice(-1) == '/' ){ webPath += curOpts.indexPage; }
@@ -37,7 +38,7 @@ module.exports = function(documentRoot, tplParams, opts ){
 			      		console.log("Error in ", filePath,err); 
 			      		next();
 			    	}
-			    	res.end(str);
+			    	if(! ( 'stopped' in res ) ){ res.end(str); }
 			  	} );
 			  return; 
 			}
